@@ -1,0 +1,11 @@
+.projects-intro {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 560px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
