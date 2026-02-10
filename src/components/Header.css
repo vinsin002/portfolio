@@ -18,20 +18,9 @@
   justify-content: space-between;
 }
 
-.logo {
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 600;
-  font-size: 1.25rem;
-}
-
-.logo-text {
-  color: var(--accent);
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.header-inner .nav {
+  margin-right: auto;
+  margin-left: 0.5rem;
 }
 
 .theme-toggle {
@@ -40,6 +29,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
+  margin-left: auto;
   background: none;
   border: none;
   border-radius: 8px;

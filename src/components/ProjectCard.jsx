@@ -26,7 +26,7 @@ function ProjectCard({ project, githubUrl }) {
           <>
             <a href={project.dashboard} target="_blank" rel="noopener noreferrer" className="dashboard-btn" onClick={(e) => e.stopPropagation()}>
               <span className="dashboard-btn-icon"><DashboardIcon /></span>
-              <span className="dashboard-btn-text">View Dashboard</span>
+              <span className="dashboard-btn-text">View Power BI Dashboard</span>
               <span className="dashboard-btn-arrow">→</span>
             </a>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" onClick={(e) => e.stopPropagation()}>

@@ -5,7 +5,7 @@ const SKILL_CATEGORIES = [
   { category: 'Languages', skills: ['Python', 'SQL', 'JavaScript'] },
   { category: 'Math & Statistics', skills: ['Statistics', 'Probability', 'Linear Algebra', 'Hypothesis Testing'] },
   { category: 'ML & Data', skills: ['ML Algorithms', 'Scikit-learn', 'Pandas', 'NumPy'] },
-  { category: 'BI & Analytics', skills: ['Power BI', 'A/B Testing', 'Data Visualization', 'Predictive Modeling'] },
+  { category: 'BI & Analytics', skills: ['Power BI', 'Excel', 'A/B Testing', 'Data Visualization', 'Predictive Modeling'] },
   { category: 'Tools & Frontend', skills: ['Jupyter', 'React'] },
 ]
 

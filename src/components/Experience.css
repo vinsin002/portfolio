@@ -1,10 +1,10 @@
-.education-grid {
+.experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.education-card {
+.experience-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -12,12 +12,12 @@
   transition: border-color 0.2s, transform 0.2s;
 }
 
-.education-card:hover {
+.experience-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-2px);
 }
 
-.education-header {
+.experience-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -25,20 +25,20 @@
   margin-bottom: 0.5rem;
 }
 
-.education-header h4 {
+.experience-header h4 {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
 }
 
-.education-duration {
+.experience-duration {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
   color: var(--accent);
   white-space: nowrap;
 }
 
-.education-institution {
+.experience-company {
   font-size: 0.95rem;
   color: var(--text-secondary);
 }
