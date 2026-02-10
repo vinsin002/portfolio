@@ -11,7 +11,6 @@ const PROJECTS = [
     repo: 'Optimizing-Revenue-Leakage-and-Profitability-in-the-Hospitality-Sector',
     description: 'Identifying and optimizing revenue leakage in the hospitality sector for improved profitability.',
     tags: ['Python', 'Analytics', 'Power BI', 'Business Intelligence'],
-    date: '2025',
     dashboard: 'https://app.powerbi.com/view?r=eyJrIjoiYjViMjhiZTctOWZlZi00MDNiLTk4MDYtZDIzNTA2NTU5OWYzIiwidCI6IjM4ZjYyOTI2LTc1NTktNGFlZi04NGFlLWNiNWUxNzI0MDZmYiJ9',
   },
   {
@@ -20,7 +19,6 @@ const PROJECTS = [
     repo: 'Solving-Inventory-Inefficiencies-Using-Advanced-SQL-Analytics',
     description: 'Advanced SQL analytics to identify and solve inventory inefficiencies in supply chain operations.',
     tags: ['SQL', 'Power BI', 'Analytics', 'Data Engineering'],
-    date: '2025',
     dashboard: 'https://app.powerbi.com/view?r=eyJrIjoiZDgyYjQxZjgtODUyNy00NzNjLTgzZGEtMzljNjYxMDNkNTFmIiwidCI6IjM4ZjYyOTI2LTc1NTktNGFlZi04NGFlLWNiNWUxNzI0MDZmYiJ9',
   },
   {
@@ -29,7 +27,6 @@ const PROJECTS = [
     repo: 'Credit-Card-Default-Prediction',
     description: 'ML model to predict credit card default risk using classification algorithms for financial risk assessment.',
     tags: ['Python', 'Classification', 'Jupyter', 'Scikit-learn'],
-    date: '2025',
   },
   {
     id: 'flight-delay',
@@ -37,7 +34,6 @@ const PROJECTS = [
     repo: 'A-Data-Driven-Approach-to-Flight-Delay-Analysis-and-Prediction',
     description: 'Data-driven approach to analyze flight delays and build predictive models for airline operational planning.',
     tags: ['Python', 'ML', 'Jupyter', 'Predictive Analytics'],
-    date: '2026',
   },
   {
     id: 'parking-pricing',
@@ -45,7 +41,6 @@ const PROJECTS = [
     repo: 'Dynamic-Pricing-for-Urban-Parking-Lots',
     description: 'Optimization model for dynamic pricing of urban parking lots to maximize revenue and utilization.',
     tags: ['Python', 'Optimization', 'Jupyter', 'Data Science'],
-    date: '2025',
   },
   {
     id: 'emotion-speech',
@@ -53,7 +48,6 @@ const PROJECTS = [
     repo: 'Emotion-Classification-of-Speech-Data',
     description: 'ML model for classifying emotions from speech audio using NLP and audio feature extraction.',
     tags: ['Python', 'NLP', 'Jupyter', 'Classification'],
-    date: '2025',
   },
   {
     id: 'summer-analytics',
@@ -61,7 +55,6 @@ const PROJECTS = [
     repo: 'Summer-Analytics-Assignment-1',
     description: 'Analytics assignment covering data cleaning, EDA, and statistical analysis techniques.',
     tags: ['Python', 'EDA', 'Jupyter', 'Statistics'],
-    date: '2025',
   },
 ]
 

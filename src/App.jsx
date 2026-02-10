@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -9,10 +9,26 @@ import './App.css'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'dark'
+    }
+    return 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
   return (
     <div className="app">
-      <Header activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Header 
+        activeSection={activeSection} 
+        setActiveSection={setActiveSection}
+        theme={theme}
+        setTheme={setTheme}
+      />
       <main>
         <Hero onViewChange={setActiveSection} />
         <About onViewChange={setActiveSection} />

@@ -1,14 +1,31 @@
-.skills-grid {
+.skills-by-category {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
 }
 
-.skill-badge {
+.skill-category-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skills-grid {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+}
+
+.skill-badge {
+  padding: 0.4rem 0.9rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -23,10 +40,5 @@
 .skill-name {
   font-weight: 500;
   color: var(--text-primary);
-}
-
-.skill-category {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
-  color: var(--text-muted);
+  font-size: 0.9rem;
 }

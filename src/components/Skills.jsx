@@ -1,18 +1,12 @@
 import { useEffect } from 'react'
 import './Skills.css'
 
-const SKILLS = [
-  { name: 'Python', category: 'Language' },
-  { name: 'SQL', category: 'Database' },
-  { name: 'Power BI', category: 'BI' },
-  { name: 'Pandas', category: 'Data' },
-  { name: 'NumPy', category: 'Data' },
-  { name: 'Scikit-learn', category: 'ML' },
-  { name: 'Jupyter', category: 'Tools' },
-  { name: 'Data Visualization', category: 'Analytics' },
-  { name: 'Predictive Modeling', category: 'ML' },
-  { name: 'JavaScript', category: 'Language' },
-  { name: 'React', category: 'Frontend' },
+const SKILL_CATEGORIES = [
+  { category: 'Languages', skills: ['Python', 'SQL', 'JavaScript'] },
+  { category: 'Math & Statistics', skills: ['Statistics', 'Probability', 'Linear Algebra', 'Hypothesis Testing'] },
+  { category: 'ML & Data', skills: ['ML Algorithms', 'Scikit-learn', 'Pandas', 'NumPy'] },
+  { category: 'BI & Analytics', skills: ['Power BI', 'A/B Testing', 'Data Visualization', 'Predictive Modeling'] },
+  { category: 'Tools & Frontend', skills: ['Jupyter', 'React'] },
 ]
 
 function Skills({ onViewChange }) {
@@ -31,11 +25,17 @@ function Skills({ onViewChange }) {
   return (
     <section id="skills">
       <h2 className="section-title">Skills & <span>Tools</span></h2>
-      <div className="skills-grid">
-        {SKILLS.map((skill) => (
-          <div key={skill.name} className="skill-badge">
-            <span className="skill-name">{skill.name}</span>
-            <span className="skill-category">{skill.category}</span>
+      <div className="skills-by-category">
+        {SKILL_CATEGORIES.map(({ category, skills }) => (
+          <div key={category} className="skill-category">
+            <h3 className="skill-category-title">{category}</h3>
+            <div className="skills-grid">
+              {skills.map((name) => (
+                <div key={name} className="skill-badge">
+                  <span className="skill-name">{name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
