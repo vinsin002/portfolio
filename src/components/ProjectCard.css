@@ -8,6 +8,11 @@
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-4px);
@@ -60,13 +65,24 @@
   border-radius: 4px;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
 .project-link {
   font-size: 0.85rem;
   color: var(--accent);
   font-weight: 500;
-  transition: transform 0.2s;
+  transition: color 0.2s;
 }
 
-.project-card:hover .project-link {
-  transform: translateX(4px);
+.project-link:hover {
+  color: var(--text-primary);
+}
+
+.project-link-primary {
+  font-weight: 600;
 }

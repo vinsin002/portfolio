@@ -6,12 +6,22 @@ const GITHUB_BASE = 'https://github.com/vinsin002'
 
 const PROJECTS = [
   {
-    id: 'flight-delay',
-    title: 'Flight Delay Analysis & Prediction',
-    repo: 'A-Data-Driven-Approach-to-Flight-Delay-Analysis-and-Prediction',
-    description: 'Data-driven approach to analyze flight delays and build predictive models for airline operational planning.',
-    tags: ['Python', 'ML', 'Jupyter', 'Predictive Analytics'],
-    date: '2026',
+    id: 'hospitality',
+    title: 'Revenue Leakage & Profitability in Hospitality',
+    repo: 'Optimizing-Revenue-Leakage-and-Profitability-in-the-Hospitality-Sector',
+    description: 'Identifying and optimizing revenue leakage in the hospitality sector for improved profitability.',
+    tags: ['Python', 'Analytics', 'Power BI', 'Business Intelligence'],
+    date: '2025',
+    dashboard: 'https://app.powerbi.com/view?r=eyJrIjoiYjViMjhiZTctOWZlZi00MDNiLTk4MDYtZDIzNTA2NTU5OWYzIiwidCI6IjM4ZjYyOTI2LTc1NTktNGFlZi04NGFlLWNiNWUxNzI0MDZmYiJ9',
+  },
+  {
+    id: 'inventory-sql',
+    title: 'Inventory Inefficiencies via Advanced SQL',
+    repo: 'Solving-Inventory-Inefficiencies-Using-Advanced-SQL-Analytics',
+    description: 'Advanced SQL analytics to identify and solve inventory inefficiencies in supply chain operations.',
+    tags: ['SQL', 'Power BI', 'Analytics', 'Data Engineering'],
+    date: '2025',
+    dashboard: 'https://app.powerbi.com/view?r=eyJrIjoiZDgyYjQxZjgtODUyNy00NzNjLTgzZGEtMzljNjYxMDNkNTFmIiwidCI6IjM4ZjYyOTI2LTc1NTktNGFlZi04NGFlLWNiNWUxNzI0MDZmYiJ9',
   },
   {
     id: 'credit-card',
@@ -22,27 +32,19 @@ const PROJECTS = [
     date: '2025',
   },
   {
+    id: 'flight-delay',
+    title: 'Flight Delay Analysis & Prediction',
+    repo: 'A-Data-Driven-Approach-to-Flight-Delay-Analysis-and-Prediction',
+    description: 'Data-driven approach to analyze flight delays and build predictive models for airline operational planning.',
+    tags: ['Python', 'ML', 'Jupyter', 'Predictive Analytics'],
+    date: '2026',
+  },
+  {
     id: 'parking-pricing',
     title: 'Dynamic Pricing for Urban Parking',
     repo: 'Dynamic-Pricing-for-Urban-Parking-Lots',
     description: 'Optimization model for dynamic pricing of urban parking lots to maximize revenue and utilization.',
     tags: ['Python', 'Optimization', 'Jupyter', 'Data Science'],
-    date: '2025',
-  },
-  {
-    id: 'hospitality',
-    title: 'Revenue Leakage & Profitability in Hospitality',
-    repo: 'Optimizing-Revenue-Leakage-and-Profitability-in-the-Hospitality-Sector',
-    description: 'Identifying and optimizing revenue leakage in the hospitality sector for improved profitability.',
-    tags: ['Python', 'Analytics', 'Jupyter', 'Business Intelligence'],
-    date: '2025',
-  },
-  {
-    id: 'inventory-sql',
-    title: 'Inventory Inefficiencies via Advanced SQL',
-    repo: 'Solving-Inventory-Inefficiencies-Using-Advanced-SQL-Analytics',
-    description: 'Advanced SQL analytics to identify and solve inventory inefficiencies in supply chain operations.',
-    tags: ['SQL', 'Analytics', 'Data Engineering'],
     date: '2025',
   },
   {
@@ -60,14 +62,6 @@ const PROJECTS = [
     description: 'Analytics assignment covering data cleaning, EDA, and statistical analysis techniques.',
     tags: ['Python', 'EDA', 'Jupyter', 'Statistics'],
     date: '2025',
-  },
-  {
-    id: 'annotator-pro',
-    title: 'AnnotatorPro',
-    repo: 'AnnotatorPro',
-    description: 'Data annotation tool for labeling datasets—supports ML and analytics workflows.',
-    tags: ['JavaScript', 'Web App', 'Data Annotation'],
-    date: '2024',
   },
 ]
 
@@ -95,7 +89,7 @@ function Projects({ onViewChange }) {
           <ProjectCard 
             key={project.id} 
             project={project}
-            url={`${GITHUB_BASE}/${project.repo}`}
+            githubUrl={`${GITHUB_BASE}/${project.repo}`}
           />
         ))}
       </div>

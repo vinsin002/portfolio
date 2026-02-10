@@ -4,6 +4,7 @@ import './Skills.css'
 const SKILLS = [
   { name: 'Python', category: 'Language' },
   { name: 'SQL', category: 'Database' },
+  { name: 'Power BI', category: 'BI' },
   { name: 'Pandas', category: 'Data' },
   { name: 'NumPy', category: 'Data' },
   { name: 'Scikit-learn', category: 'ML' },
