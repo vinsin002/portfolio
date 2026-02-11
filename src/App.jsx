@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import About from './components/About'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Certifications from './components/Certifications'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import './App.css'
@@ -33,11 +33,11 @@ function App() {
       />
       <main>
         <Hero onViewChange={setActiveSection} />
-        <About onViewChange={setActiveSection} />
         <Education onViewChange={setActiveSection} />
         <Experience onViewChange={setActiveSection} />
         <Projects onViewChange={setActiveSection} />
         <Skills onViewChange={setActiveSection} />
+        <Certifications onViewChange={setActiveSection} />
         <Contact onViewChange={setActiveSection} />
       </main>
     </div>

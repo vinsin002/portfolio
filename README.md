@@ -28,6 +28,16 @@ Then open [http://localhost:5173](http://localhost:5173).
 npm run build
 ```
 
+## Contact Form
+
+The contact form uses [Web3Forms](https://web3forms.com) to forward messages to your email.
+
+**Setup:**
+1. Go to [web3forms.com](https://web3forms.com)
+2. Enter your email (singh.vikrant9798@gmail.com) and create an access key
+3. Add `VITE_WEB3FORMS_ACCESS_KEY=your_key` to `.env` (see `.env.example`)
+4. For Vercel: add `VITE_WEB3FORMS_ACCESS_KEY` under Project Settings → Environment Variables
+
 ## Tech Stack
 
 - React 18

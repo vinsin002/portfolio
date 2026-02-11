@@ -23,19 +23,17 @@ function Hero({ onViewChange }) {
       <div className="hero-content">
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Vikrant Singh</h1>
-        <p className="hero-title">Data Analyst & Analytics Engineer</p>
         <p className="hero-desc">
-          I turn complex data into actionable insights. Specialized in predictive analytics, 
-          SQL optimization, and building data-driven solutions for aviation, finance, and hospitality.
+          I am a final year student at IIT Roorkee with a deep passion for data. I specialize in turning raw, complex datasets into actionable insights that drive business decisions. Through predictive analytics, SQL optimization, and data-driven problem solving.
         </p>
         <div className="hero-actions">
           <a 
-            href="https://github.com/vinsin002" 
+            href="https://www.linkedin.com/in/vikrant-singh-63948b236/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
-            View on GitHub
+            Resume
           </a>
           <button className="btn btn-secondary" onClick={() => scrollTo('projects')}>
             See Projects

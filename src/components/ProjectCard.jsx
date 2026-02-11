@@ -30,7 +30,7 @@ function ProjectCard({ project, githubUrl }) {
               <span className="dashboard-btn-arrow">→</span>
             </a>
             <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" onClick={(e) => e.stopPropagation()}>
-              View on GitHub
+              View on GitHub →
             </a>
           </>
         ) : (

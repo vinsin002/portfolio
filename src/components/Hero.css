@@ -37,6 +37,8 @@
   font-size: 1.05rem;
   margin-bottom: 2rem;
   line-height: 1.7;
+  max-width: 520px;
+  text-align: justify;
 }
 
 .hero-actions {

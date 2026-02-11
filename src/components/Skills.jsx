@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import './Skills.css'
 
 const SKILL_CATEGORIES = [
-  { category: 'Languages', skills: ['Python', 'SQL', 'JavaScript'] },
-  { category: 'Math & Statistics', skills: ['Statistics', 'Probability', 'Linear Algebra', 'Hypothesis Testing'] },
-  { category: 'ML & Data', skills: ['ML Algorithms', 'Scikit-learn', 'Pandas', 'NumPy'] },
-  { category: 'BI & Analytics', skills: ['Power BI', 'Excel', 'A/B Testing', 'Data Visualization', 'Predictive Modeling'] },
-  { category: 'Tools & Frontend', skills: ['Jupyter', 'React'] },
+  { category: 'Languages', skills: ['Python', 'SQL'] },
+  { category: 'Math & Statistics', skills: ['Statistics', 'Probability', 'Linear Algebra'] },
+  { category: 'ML Libraries', skills: ['Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'XGBoost'] },
+  { category: 'BI & Analytics', skills: ['Microsoft Power BI', 'Microsoft Excel'] },
+  { category: 'Others', skills: ['A/B Testing', 'Predictive Modeling', 'Data Visualization', 'Hypothesis Testing', 'Jupyter Notebook', 'Cursor'] },
 ]
 
 function Skills({ onViewChange }) {

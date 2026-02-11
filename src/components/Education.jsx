@@ -3,10 +3,10 @@ import './Education.css'
 
 const EDUCATION = [
   {
-    degree: 'B.Tech',
+    degree: 'Bachelor of Technology',
     institution: 'Indian Institute of Technology Roorkee',
     shortName: 'IIT Roorkee',
-    duration: 'Final Year Student',
+    duration: 'Oct 2022 - May 2026',
   },
 ]
 
@@ -30,10 +30,10 @@ function Education({ onViewChange }) {
         {EDUCATION.map((item) => (
           <div key={item.shortName} className="education-card">
             <div className="education-header">
-              <h4>{item.degree}</h4>
+              <h4>{item.institution}</h4>
               <span className="education-duration">{item.duration}</span>
             </div>
-            <p className="education-institution">{item.institution}</p>
+            <p className="education-institution">{item.degree}</p>
           </div>
         ))}
       </div>

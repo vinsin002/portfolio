@@ -3,14 +3,14 @@ import './Experience.css'
 
 const EXPERIENCE = [
   {
-    role: 'Business Analyst',
+    role: 'Business Analyst Internship',
     company: 'BigHit Sportz',
-    duration: 'May - July 2025',
+    duration: 'May 2025 - July 2025',
   },
   {
-    role: 'Data Analyst',
-    company: 'Turtlemint Insurance Broking Pvt Ltd',
-    duration: 'Dec 2025 - Jan 2026',
+    role: 'Data Analyst Internship',
+    company: 'Turtlemint Insurance Broking Pvt. Ltd.',
+    duration: 'Dec 2024 - Jan 2025',
   },
 ]
 
