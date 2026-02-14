@@ -45,11 +45,7 @@ function Contact({ onViewChange }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
-    if (!accessKey) {
-      setFormStatus('error')
-      return
-    }
+    const accessKey = 'fa4105ec-da62-48a7-9b54-e562374d504e'
     setFormStatus('sending')
     const form = e.target
     const formData = {
