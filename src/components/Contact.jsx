@@ -30,6 +30,7 @@ const SOCIAL_LINKS = [
 
 function Contact({ onViewChange }) {
   const [formStatus, setFormStatus] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,10 +48,12 @@ function Contact({ onViewChange }) {
     e.preventDefault()
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
     if (!accessKey) {
+      setErrorMsg('Access key not configured')
       setFormStatus('error')
       return
     }
     setFormStatus('sending')
+    setErrorMsg('')
     const form = e.target
     const formData = {
       access_key: accessKey,
@@ -73,9 +76,11 @@ function Contact({ onViewChange }) {
         setFormStatus('success')
         form.reset()
       } else {
+        setErrorMsg(data.message || 'Unknown error from Web3Forms')
         setFormStatus('error')
       }
-    } catch {
+    } catch (err) {
+      setErrorMsg(err.message || 'Network error')
       setFormStatus('error')
     }
   }
@@ -112,7 +117,7 @@ function Contact({ onViewChange }) {
             {formStatus === 'sending' ? 'Sending...' : 'Send message'}
           </button>
           {formStatus === 'success' && <p className="form-status success">Thanks! Your message was sent.</p>}
-          {formStatus === 'error' && <p className="form-status error">Unable to send. Please email me at singh.vikrant9798@gmail.com</p>}
+          {formStatus === 'error' && <p className="form-status error">{errorMsg || 'Unable to send.'} Please email me at singh.vikrant9798@gmail.com</p>}
           </form>
         </div>
       </div>
