@@ -61,6 +61,8 @@ function Contact({ onViewChange }) {
       email: form.email.value,
       message: form.message.value,
       subject: 'Portfolio Contact Form',
+      from_name: 'Portfolio Website',
+      botcheck: '',
     }
     try {
       const res = await fetch(FORM_ENDPOINT, {
@@ -110,6 +112,7 @@ function Contact({ onViewChange }) {
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
+          <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" placeholder="Your message" rows="5" required></textarea>
