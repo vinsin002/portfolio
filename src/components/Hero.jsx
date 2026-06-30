@@ -24,7 +24,7 @@ function Hero({ onViewChange }) {
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Vikrant Singh</h1>
         <p className="hero-desc">
-          I am a final year student at IIT Roorkee with a deep passion for data. I specialize in turning raw, complex datasets into actionable insights that drive business decisions. Through predictive analytics, SQL optimization, and data-driven problem solving.
+          I am a recent graduate from IIT Roorkee with a deep passion for data. I specialize in turning raw, complex datasets into actionable insights that drive business decisions. Through predictive analytics, SQL optimization, and data-driven problem solving.
         </p>
         <div className="hero-actions">
           <a 
