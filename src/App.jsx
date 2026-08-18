@@ -4,8 +4,9 @@ import Hero from './components/Hero'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
-import Certifications from './components/Certifications'
 import Skills from './components/Skills'
+import Achievements from './components/Achievements'
+import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import './App.css'
 
@@ -37,6 +38,7 @@ function App() {
         <Experience onViewChange={setActiveSection} />
         <Projects onViewChange={setActiveSection} />
         <Skills onViewChange={setActiveSection} />
+        <Achievements onViewChange={setActiveSection} />
         <Certifications onViewChange={setActiveSection} />
         <Contact onViewChange={setActiveSection} />
       </main>
