@@ -1,11 +1,21 @@
 import { useEffect } from 'react'
 import './Experience.css'
+import incommLogo from '../assets/companies/incomm.png'
 import tata1mgLogo from '../assets/companies/tata1mg.png'
 import uberLogo from '../assets/companies/uber.png'
 import bighitLogo from '../assets/companies/bighit.png'
 import turtlemintLogo from '../assets/companies/turtlemint.png'
 
 const EXPERIENCE = [
+  {
+    role: 'Data Analyst',
+    company: 'InComm Payments',
+    employmentType: 'Full-time',
+    duration: 'Aug 2026 - Present',
+    location: 'Remote',
+    skills: ['SQL', 'Python (Programming Language)', 'Data Analytics', 'Financial Analytics'],
+    logoType: 'incomm',
+  },
   {
     role: 'Business Analyst',
     company: 'Tata 1mg',
@@ -45,6 +55,7 @@ const EXPERIENCE = [
 ]
 
 const LOGOS = {
+  incomm: { src: incommLogo, alt: 'InComm Payments' },
   tata1mg: { src: tata1mgLogo, alt: 'Tata 1mg' },
   uber: { src: uberLogo, alt: 'Uber AI Solutions' },
   bighit: { src: bighitLogo, alt: 'BigHit Sportz' },

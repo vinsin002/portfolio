@@ -74,9 +74,18 @@
   flex-shrink: 0;
 }
 
+.company-logo-wrapper.logo-incomm,
 .company-logo-wrapper.logo-bighit,
 .company-logo-wrapper.logo-turtlemint {
   background: #ffffff;
+}
+
+.company-logo-wrapper.logo-incomm {
+  padding: 3px;
+}
+
+.company-logo-wrapper.logo-incomm .company-logo-img {
+  object-fit: contain;
 }
 
 .company-logo-wrapper.logo-uber {
