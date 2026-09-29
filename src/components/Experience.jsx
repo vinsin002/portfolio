@@ -9,47 +9,68 @@ import turtlemintLogo from '../assets/companies/turtlemint.png'
 const EXPERIENCE = [
   {
     role: 'Data Analyst',
-    company: 'InComm Payments',
+    company: 'Incomm Payments (Employer of Record Teak Staffing)',
     employmentType: 'Full-time',
-    duration: 'Aug 2026 - Present',
+    duration: 'September 2026 – Present',
     location: 'Remote',
-    skills: ['SQL', 'Python (Programming Language)', 'Data Analytics', 'Financial Analytics'],
+    descriptions: [
+      'Working in the intersection of <strong>Analytics and Strategy</strong> in Fraud Strategy Team for a US Based Gift Card Company.',
+    ],
+    skills: ['SQL', 'Python', 'Analytics & Strategy', 'Fraud Analytics'],
     logoType: 'incomm',
   },
   {
-    role: 'Business Analyst',
+    role: 'Business Analyst Intern',
     company: 'Tata 1mg',
     employmentType: 'Internship',
-    duration: 'Jul 2026 - Present · 2 mos',
-    location: 'Gurugram, Haryana, India · On-site',
-    skills: ['SQL', 'Google Sheets', 'Business Analytics', 'Data Insights'],
+    duration: 'July 2026 – September 2026',
+    location: 'Gurugram',
+    descriptions: [
+      'Built a <strong>Dashboard</strong> to automate performance tracking across <strong>360+ Retail Stores</strong> for <strong>Top Leadership</strong> reducing manual dependency. Modeled various <strong>KPIs and trend visualizations</strong> like <strong>Inventory Value, Days of Inventory, Unhealthy Inventory%, Capacity Util.%, GMV, Average Order Value</strong> & other relevant Business metrics.',
+      'Leveraged <strong>Claude Code</strong> integrating <strong>Databricks</strong> to built an <strong>Auto-Replenishment Minimum Stock Norm Drop Funnel</strong> for visualizing various stages of stock drop like <strong>Fullfillment Centre</strong>, Space Constraint and other checks, finally calculating a landing efficiency of planned vs actual stock landed at the retail stores.',
+    ],
+    skills: ['Databricks', 'Claude Code', 'SQL', 'KPI Modeling', 'Inventory Analytics'],
     logoType: 'tata1mg',
   },
   {
-    role: 'Data Analyst',
+    role: 'AI Data Analyst',
     company: 'Uber AI Solutions',
-    employmentType: 'Freelance',
-    duration: 'Mar 2026 - Apr 2026 · 2 mos',
+    employmentType: 'Freelance Project',
+    duration: 'March 2026 – April 2026',
     location: 'Remote',
-    skills: ['Data Analysis', 'Python', 'SQL', 'AI Solutions'],
+    descriptions: [
+      'Analyzed <strong>ROC-AUC</strong> charts to derive correct answers for complex multi-step questions for improving Model Accuracy.',
+      'Reviewed <strong>AI Generated SQL Queries</strong> for unambiguous answers,reasoning complexity to meet quality standards.',
+    ],
+    skills: ['ROC-AUC', 'SQL Optimization', 'Model Accuracy', 'AI Solutions'],
     logoType: 'uber',
   },
   {
-    role: 'Business Analyst',
+    role: 'Business Analyst Intern',
     company: 'BigHit Sportz',
     employmentType: 'Internship',
-    duration: 'May 2025 - Jul 2025 · 3 mos',
+    duration: 'May 2025 – July 2025',
     location: 'Remote',
-    skills: ['SQL', 'Python (Programming Language)', 'Growth Analytics'],
+    descriptions: [
+      'Analyzed <strong>10K+</strong> cross platform user data to generate real-time insights on engagement patterns and retention trends.',
+      'Analyzed Merchandise Sales Data using Python to track KPIs like Average Order Value & Revenue Growth Rate.',
+      'Developed <strong>Power BI Dashboard</strong> to present sales trends to stakeholders for informed data driven decision making.',
+    ],
+    skills: ['Python', 'Power BI', 'SQL', 'Growth Analytics', 'KPI Tracking'],
     logoType: 'bighit',
   },
   {
-    role: 'Data Analyst',
+    role: 'Data Analyst Intern',
     company: 'Turtlemint',
     employmentType: 'Internship',
-    duration: 'Dec 2024 - Jan 2025 · 2 mos',
+    duration: 'Dec 2024 – Jan 2025',
     location: 'Remote',
-    skills: ['Python (Programming Language)', 'Stakeholder Management', 'Data Analytics'],
+    descriptions: [
+      'Collaborated with cross functional teams like <strong>Motor Insurance, Renewal & Ninja</strong> to analyze performance metrics.',
+      'Utilized <strong>Python, Pandas, SQL and Mixpanel</strong> to process and analyze complex datasets for actionable insights.',
+      'Collaborated with senior management to address business requirements & delivered daily insights to stakeholders.',
+    ],
+    skills: ['Python', 'Pandas', 'SQL', 'Mixpanel', 'Stakeholder Management'],
     logoType: 'turtlemint',
   },
 ]
@@ -105,19 +126,20 @@ function Experience({ onViewChange }) {
           </svg>
         </a>
       </div>
-      <div className="experience-grid">
+      <div className="experience-list">
         {EXPERIENCE.map((item) => (
           <div key={`${item.company}-${item.role}`} className="experience-card">
-            <div className="experience-card-top">
-              <CompanyLogo type={item.logoType} />
-              <div className="experience-main-info">
-                <div className="experience-header">
-                  <h4 className="experience-role">{item.role}</h4>
-                  <span className="experience-duration">{item.duration}</span>
+            <div className="experience-card-header">
+              <div className="experience-brand">
+                <CompanyLogo type={item.logoType} />
+                <div className="experience-headings">
+                  <h3 className="experience-company-name">{item.company}</h3>
+                  <h4 className="experience-role-title">{item.role}</h4>
                 </div>
-                <p className="experience-company">
-                  <span className="company-name">{item.company}</span>
-                  <span className="dot-separator">•</span>
+              </div>
+              <div className="experience-meta">
+                <span className="experience-duration">{item.duration}</span>
+                <div className="experience-tags">
                   <span className="employment-type">{item.employmentType}</span>
                   {item.location && (
                     <>
@@ -125,9 +147,21 @@ function Experience({ onViewChange }) {
                       <span className="experience-location-text">{item.location}</span>
                     </>
                   )}
-                </p>
+                </div>
               </div>
             </div>
+
+            {item.descriptions && item.descriptions.length > 0 && (
+              <ul className="experience-bullets">
+                {item.descriptions.map((desc, idx) => (
+                  <li
+                    key={idx}
+                    className="experience-bullet-item"
+                    dangerouslySetInnerHTML={{ __html: desc }}
+                  />
+                ))}
+              </ul>
+            )}
 
             {item.skills && item.skills.length > 0 && (
               <div className="experience-skills">
