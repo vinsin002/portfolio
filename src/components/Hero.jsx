@@ -28,7 +28,7 @@ function Hero({ onViewChange }) {
         </p>
         <div className="hero-actions">
           <a 
-            href="https://drive.google.com/file/d/1Vgj8w0FnQG87lGmcQijhpDhXjmj1fvrR/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1IYP8D6p61dMge9kqVqg2vx4p2uWI6pGH/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-primary"
