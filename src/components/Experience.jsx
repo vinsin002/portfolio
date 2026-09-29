@@ -61,7 +61,7 @@ const EXPERIENCE = [
   },
   {
     role: 'Data Analyst Intern',
-    company: 'Turtlemint',
+    company: 'Turtlemint Insurance Broking Pvt. Ltd.',
     employmentType: 'Internship',
     duration: 'Dec 2024 – Jan 2025',
     location: 'Remote',
@@ -80,7 +80,7 @@ const LOGOS = {
   tata1mg: { src: tata1mgLogo, alt: 'Tata 1mg' },
   uber: { src: uberLogo, alt: 'Uber AI Solutions' },
   bighit: { src: bighitLogo, alt: 'BigHit Sportz' },
-  turtlemint: { src: turtlemintLogo, alt: 'Turtlemint' },
+  turtlemint: { src: turtlemintLogo, alt: 'Turtlemint Insurance Broking Pvt. Ltd.' },
 }
 
 function CompanyLogo({ type }) {
