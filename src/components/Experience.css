@@ -60,12 +60,38 @@
   gap: 1rem;
 }
 
-.company-logo-svg {
+.company-logo-wrapper {
   width: 48px;
   height: 48px;
   min-width: 48px;
   border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
   flex-shrink: 0;
+}
+
+.company-logo-wrapper.logo-bighit,
+.company-logo-wrapper.logo-turtlemint {
+  background: #ffffff;
+}
+
+.company-logo-wrapper.logo-uber {
+  background: #000000;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.company-logo-wrapper.logo-tata1mg {
+  background: #ff6f61;
+}
+
+.company-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 

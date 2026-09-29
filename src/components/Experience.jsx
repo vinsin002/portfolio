@@ -1,5 +1,9 @@
 import { useEffect } from 'react'
 import './Experience.css'
+import tata1mgLogo from '../assets/companies/tata1mg.png'
+import uberLogo from '../assets/companies/uber.png'
+import bighitLogo from '../assets/companies/bighit.png'
+import turtlemintLogo from '../assets/companies/turtlemint.png'
 
 const EXPERIENCE = [
   {
@@ -40,70 +44,21 @@ const EXPERIENCE = [
   },
 ]
 
-function Tata1mgLogo() {
-  return (
-    <svg viewBox="0 0 60 60" className="company-logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="60" height="60" rx="12" fill="#FF5344" />
-      <text x="30" y="24" textAnchor="middle" fill="#FFFFFF" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="10.5" letterSpacing="1.5">TATA</text>
-      <text x="30" y="47" textAnchor="middle" fill="#FFFFFF" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="900" fontSize="21" letterSpacing="-0.8">1mg</text>
-    </svg>
-  )
-}
-
-function UberLogo() {
-  return (
-    <svg viewBox="0 0 60 60" className="company-logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="60" height="60" rx="12" fill="#000000" />
-      <rect x="0.5" y="0.5" width="59" height="59" rx="11.5" stroke="rgba(255,255,255,0.18)" />
-      <text x="30" y="30" textAnchor="middle" fill="#FFFFFF" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="700" fontSize="17" letterSpacing="-0.4">Uber</text>
-      <text x="30" y="45" textAnchor="middle" fill="#D1D5DB" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="600" fontSize="7" letterSpacing="0.2">AI Solutions</text>
-    </svg>
-  )
-}
-
-function BigHitLogo() {
-  return (
-    <svg viewBox="0 0 60 60" className="company-logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="30" cy="30" r="30" fill="url(#bighit-grad)" />
-      <defs>
-        <radialGradient id="bighit-grad" cx="30%" cy="30%" r="70%">
-          <stop offset="0%" stopColor="#0077FF" />
-          <stop offset="100%" stopColor="#0038A8" />
-        </radialGradient>
-        <linearGradient id="cyan-hit" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#38BDF8" />
-          <stop offset="100%" stopColor="#00F0FF" />
-        </linearGradient>
-      </defs>
-      <g transform="skewX(-10) translate(4, 0)">
-        <text x="26" y="27" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact, 'Arial Black', sans-serif" fontWeight="900" fontSize="18" letterSpacing="0.3">BIG</text>
-        <text x="26" y="47" textAnchor="middle" fill="url(#cyan-hit)" fontFamily="Impact, 'Arial Black', sans-serif" fontWeight="900" fontSize="18" letterSpacing="0.3">HIT</text>
-      </g>
-    </svg>
-  )
-}
-
-function TurtlemintLogo() {
-  return (
-    <svg viewBox="0 0 60 60" className="company-logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="60" height="60" rx="12" fill="#FFFFFF" />
-      <rect x="0.5" y="0.5" width="59" height="59" rx="11.5" stroke="#E5E7EB" />
-      <circle cx="30" cy="24" r="13" fill="#ECFDF5" stroke="#F59E0B" strokeWidth="1.5" strokeDasharray="2.5 2.5" />
-      <ellipse cx="30" cy="24" rx="8" ry="7" fill="#10B981" />
-      <circle cx="30" cy="20" r="4" fill="#34D399" />
-      <circle cx="26.5" cy="25.5" r="2" fill="#047857" />
-      <circle cx="33.5" cy="25.5" r="2" fill="#047857" />
-      <circle cx="30" cy="26" r="2.5" fill="#065F46" />
-      <text x="30" y="49" textAnchor="middle" fill="#0D9488" fontFamily="system-ui, -apple-system, sans-serif" fontWeight="800" fontSize="8.5" letterSpacing="-0.3">turtlemint</text>
-    </svg>
-  )
+const LOGOS = {
+  tata1mg: { src: tata1mgLogo, alt: 'Tata 1mg' },
+  uber: { src: uberLogo, alt: 'Uber AI Solutions' },
+  bighit: { src: bighitLogo, alt: 'BigHit Sportz' },
+  turtlemint: { src: turtlemintLogo, alt: 'Turtlemint' },
 }
 
 function CompanyLogo({ type }) {
-  if (type === 'tata1mg') return <Tata1mgLogo />
-  if (type === 'uber') return <UberLogo />
-  if (type === 'bighit') return <BigHitLogo />
-  return <TurtlemintLogo />
+  const logo = LOGOS[type]
+  if (!logo) return null
+  return (
+    <div className={`company-logo-wrapper logo-${type}`}>
+      <img src={logo.src} alt={logo.alt} className="company-logo-img" loading="lazy" />
+    </div>
+  )
 }
 
 function Experience({ onViewChange }) {
