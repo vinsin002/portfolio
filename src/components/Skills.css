@@ -25,20 +25,24 @@
 }
 
 .skill-badge {
-  padding: 0.4rem 0.9rem;
+  padding: 0.45rem 1rem;
   background: var(--bg-card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  transition: border-color 0.2s, background 0.2s;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
 }
 
 .skill-badge:hover {
-  border-color: var(--accent-dim);
-  background: var(--accent-dim);
+  border-color: rgba(34, 211, 238, 0.4);
+  background: rgba(34, 211, 238, 0.1);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.15);
+  transform: translateY(-2px);
 }
 
 .skill-name {
   font-weight: 500;
   color: var(--text-primary);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }

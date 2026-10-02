@@ -56,18 +56,21 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  transition: color 0.2s, background 0.2s;
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
   color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-link.active {
-  color: var(--accent);
-  background: var(--accent-dim);
+  color: #ffffff;
+  background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.15);
 }
 
 .menu-toggle {

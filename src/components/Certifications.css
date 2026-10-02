@@ -8,16 +8,18 @@
   display: flex;
   flex-direction: column;
   background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.25rem;
-  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  border-radius: 16px;
+  padding: 1.45rem;
+  transition: all 0.25s ease;
 }
 
 .certification-card:hover {
-  border-color: var(--accent-dim);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(34, 211, 238, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(34, 211, 238, 0.1);
 }
 
 .certification-name {
