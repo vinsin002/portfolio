@@ -9,7 +9,7 @@ import turtlemintLogo from '../assets/companies/turtlemint.png'
 const EXPERIENCE = [
   {
     role: 'Data Analyst',
-    company: 'Incomm Payments (Employer of Record Teak Staffing)',
+    company: 'Incomm Payments',
     employmentType: 'Full-time',
     duration: 'September 2026 – Present',
     location: 'Remote',
