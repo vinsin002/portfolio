@@ -24,7 +24,10 @@ function Hero({ onViewChange }) {
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Vikrant Singh</h1>
         <p className="hero-desc">
-          I am a recent graduate from IIT Roorkee with a deep passion for data. I specialize in turning raw, complex datasets into actionable insights that drive business decisions. Through predictive analytics, SQL optimization, and data-driven problem solving.
+          A graduate from IIT Roorkee with a strong interest in Analytics and Business Intelligence. I have hands on experience in data analysis, dashboarding, KPI tracking, and business reporting, with exposure to Insurance, Supply Chain, FinTech, Sales, and Product Analytics gained through multiple analytics internships and full time role.
+        </p>
+        <p className="hero-desc">
+          Currently, I work as a Data Analyst at Incomm Payments, working at the intersection of Strategy and Analytics within the Fraud Strategy team. I enjoy solving business problems using Python, SQL, Power BI, Excel, and data driven analytical approaches, with a focus on turning data into insights that drive better decisions.
         </p>
         <div className="hero-actions">
           <a 

@@ -8,7 +8,7 @@
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 640px;
 }
 
 .hero-greeting {
@@ -35,10 +35,14 @@
 .hero-desc {
   color: var(--text-secondary);
   font-size: 1.05rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   line-height: 1.7;
-  max-width: 520px;
+  max-width: 620px;
   text-align: justify;
+}
+
+.hero-desc:last-of-type {
+  margin-bottom: 2rem;
 }
 
 .hero-actions {
