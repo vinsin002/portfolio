@@ -65,10 +65,6 @@ function Hero({ onViewChange }) {
       </div>
 
       <div className="hero-content">
-        <div className="hero-badge">
-          <span className="badge-dot"></span>
-          <span>DATA ANALYST · IIT ROORKEE</span>
-        </div>
 
         <h1 className="hero-name">
           Hi, I'm <br />
@@ -112,21 +108,7 @@ function Hero({ onViewChange }) {
           </a>
         </div>
 
-        {/* 3 Metric Stat Cards */}
-        <div className="hero-stats">
-          <div className="hero-stat-card">
-            <div className="stat-number">5</div>
-            <div className="stat-label">Roles &amp; Internships</div>
-          </div>
-          <div className="hero-stat-card">
-            <div className="stat-number">6</div>
-            <div className="stat-label">Featured Projects</div>
-          </div>
-          <div className="hero-stat-card">
-            <div className="stat-number">38/7.7K</div>
-            <div className="stat-label">IIM Calcutta Rank</div>
-          </div>
-        </div>
+
       </div>
     </section>
   )
