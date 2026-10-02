@@ -26,9 +26,7 @@ function Hero({ onViewChange }) {
         <p className="hero-desc">
           A graduate from IIT Roorkee with a strong interest in Analytics and Business Intelligence. I have hands on experience in data analysis, dashboarding, KPI tracking, and business reporting, with exposure to Insurance, Supply Chain, FinTech, Sales, and Product Analytics gained through multiple analytics internships and full time role.
         </p>
-        <p className="hero-desc">
-          Currently, I work as a Data Analyst at Incomm Payments, working at the intersection of Strategy and Analytics within the Fraud Strategy team. I enjoy solving business problems using Python, SQL, Power BI, Excel, and data driven analytical approaches, with a focus on turning data into insights that drive better decisions.
-        </p>
+
         <div className="hero-actions">
           <a
             href="https://drive.google.com/file/d/1hSbpWxWqHEB5cNyi-X7dXERC8kM_BlWj/view?usp=sharing"
