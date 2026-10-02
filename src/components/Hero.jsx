@@ -23,15 +23,16 @@ function Hero({ onViewChange }) {
       <div className="hero-content">
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Vikrant Singh</h1>
+        <p className="hero-title">Data Analyst <span className="title-sep">•</span> Strategy &amp; Analytics</p>
         <p className="hero-desc">
-          A graduate from IIT Roorkee with a strong interest in Analytics and Business Intelligence. I have hands on experience in data analysis, dashboarding, KPI tracking, and business reporting, with exposure to Insurance, Supply Chain, FinTech, Sales, and Product Analytics gained through multiple analytics internships and full time role.
+          Graduate from <strong>IIT Roorkee</strong> with a strong interest in <strong>Analytics &amp; Business Intelligence</strong>. Hands-on experience in data analysis, dashboarding, KPI tracking, and business reporting, with domain exposure across Insurance, Supply Chain, FinTech, Sales, and Product Analytics.
         </p>
         <p className="hero-desc">
-          Currently, I work as a Data Analyst at Incomm Payments, working at the intersection of Strategy and Analytics within the Fraud Strategy team. I enjoy solving business problems using Python, SQL, Power BI, Excel, and data driven analytical approaches, with a focus on turning data into insights that drive better decisions.
+          Currently working as a <strong>Data Analyst at Incomm Payments</strong> at the intersection of Strategy &amp; Analytics within the <strong>Fraud Strategy</strong> team. Dedicated to solving complex business problems using <strong>Python, SQL, Power BI, Excel</strong>, and data-driven analytical approaches to turn raw data into insights that drive better decisions.
         </p>
         <div className="hero-actions">
           <a
-            href="https://drive.google.com/file/d/1_bOqUtnBjyt9VR8yZ66aV6hq8iaZtFHQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1hSbpWxWqHEB5cNyi-X7dXERC8kM_BlWj/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"

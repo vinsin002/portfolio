@@ -28,17 +28,29 @@
 
 .hero-title {
   font-size: 1.25rem;
-  color: var(--text-secondary);
+  font-weight: 500;
+  color: var(--accent);
   margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-title .title-sep {
+  opacity: 0.5;
+  margin: 0 0.4rem;
 }
 
 .hero-desc {
   color: var(--text-secondary);
   font-size: 1.05rem;
   margin-bottom: 1.25rem;
-  line-height: 1.7;
+  line-height: 1.75;
   max-width: 620px;
-  text-align: justify;
+  text-align: left;
+}
+
+.hero-desc strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .hero-desc:last-of-type {
