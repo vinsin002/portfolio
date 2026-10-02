@@ -91,7 +91,7 @@ function Hero({ onViewChange }) {
         </div>
 
         <p className="hero-desc">
-          I turn raw numbers into decisions — with hands-on experience in data analysis, dashboarding, KPI tracking and business reporting across Insurance, Supply Chain, FinTech, Sales and Product Analytics. Currently on the Fraud Strategy team at InComm Payments.
+          A graduate from IIT Roorkee with a strong interest in Analytics and Business Intelligence. I have hands on experience in data analysis, dashboarding, KPI tracking, and business reporting, with exposure to Insurance, Supply Chain, FinTech, Sales, and Product Analytics gained through multiple analytics internships and full time role.
         </p>
 
         <div className="hero-actions">
