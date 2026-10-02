@@ -30,9 +30,9 @@ function Hero({ onViewChange }) {
           Currently, I work as a Data Analyst at Incomm Payments, working at the intersection of Strategy and Analytics within the Fraud Strategy team. I enjoy solving business problems using Python, SQL, Power BI, Excel, and data driven analytical approaches, with a focus on turning data into insights that drive better decisions.
         </p>
         <div className="hero-actions">
-          <a 
-            href="https://drive.google.com/file/d/1_bOqUtnBjyt9VR8yZ66aV6hq8iaZtFHQ/view?usp=sharing" 
-            target="_blank" 
+          <a
+            href="https://drive.google.com/file/d/1_bOqUtnBjyt9VR8yZ66aV6hq8iaZtFHQ/view?usp=sharing"
+            target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"
           >
